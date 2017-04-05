@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<declare-styleable name="SpanTextView">
+    <attr name="text01" format="string"/>
+    <attr name="text02" format="string"/>
+    <attr name="color01" format="color"/>
+    <attr name="color02" format="color"/>
+    <attr name="size01" format="integer"/>
+    <attr name="size02" format="integer"/>
+</declare-styleable>
+
+</resources>
