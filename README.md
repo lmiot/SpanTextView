@@ -1,5 +1,5 @@
-# ColorCircleProgressView
-  自定义环形进度条
+# SpanTextView
+  自定义SpanTextView
   
   
 
@@ -8,7 +8,7 @@
     allprojects {
     repositories {
         jcenter()
-        maven { url 'https://jitpack.io' } //此处插入 
+       	maven { url 'https://jitpack.io' }
         }
     }
 
@@ -17,81 +17,56 @@
 ## 二.其次在dependencies中添加：
 <pre><code>
 dependencies {
-    compile 'com.github.alijiahua:ColorCircleProgressView:V1.0'
+     compile 'com.github.alijiahua:SpanTextView:V1.0'
 }
 </code></pre>
 
 
-## 四.进度条监听接口：
-<pre><code>
 
-      ColorCircleProgressView circleProgressView= (ColorCircleProgressView) findViewById(R.id.id_color_view);
-        circleProgressView.setOnProgressListener(new ColorCircleProgressView.OnProgressListener() {
-            @Override
-            
-            public void onScrollingListener(Integer prgress, boolean isStop) {
-                //prgress ，当前的百分比0-100
-                //isStop ,是否已经停止滑动，true表示已经停止
+## 三.xml文件中引用
 
-            }
-        });
-
-
-</code></pre>
-
-## 五.xml文件中引用
-
-     <com.limot.mylibrary.ColorCircleProgressView
-        android:id="@+id/id_color_view"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true"
-        app:Color01="@color/home01"
-        app:Color02="@color/home01"
-        app:Color03="@color/home01"
-        app:Color04="@color/home01"
-        app:Color05="@color/home01"
-        app:Color06="@color/home01"
-        app:Color07="@color/home01"
-        app:PointColor="@color/home01"
-        app:StrokeWith="20"
-        app:PointRadio="10"
-        app:ViewAngle="180"
-        app:StartAngle="90"
-        />
+       <com.limot.spantextviewlibrary.SpanTextView
+             android:id="@+id/id_span_text_view"
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             app:color01="@color/colorAccent"
+             app:color02="@color/colorPrimary"
+             app:size01="30"
+             app:size02="10"
+             app:text01="第一组字体"
+             app:text02="第二组字体"
+             />
 
 
 
-*Color01到Color07表示进度条的渐变颜色*
 
-*PointColor：表示拖动点的颜色*
+*text01：第一组字体*
 
-*PointRadio：表示拖动点的大小*
+*text02：第二组字体*
 
-*StartAngle：表示进度条开始的角度*
+*color01：第一组字体颜色*
 
-*ViewAngle：表示进度条的角度大小*
+*color02：第二组字体颜色*
 
-*StrokeWith：表示线条的大小*
+*size01：第一组字体大小*
 
-## 五.步骤说明：
-
-1.自定义Colorcircleprogressview继承view； 
-
-2.在values下建立attrs文件，并定义自己的属性； 
-
-3.在view中通过getContext().getTheme().obtainStyledAttributes（）把属性引入； 
-
-4.重写onDraw方法 
-
-5.重写onTouchEvent方法 
-
-6.编写滑动监听接口
-
-## 六.参考效果图：
-![](https://github.com/alijiahua/Image/blob/master/circleCorlorBg.png)
+*size02：第二组字体大小*
 
 
-## 七.CSDN博客地址：http://blog.csdn.net/alijiahua 
+## 四.Java中设置：
 
-附:本人首个开源项目，如果不足之处，敬请指教！
+     SpanTextView spanTextView= (SpanTextView) findViewById(R.id.id_span_text_view);
+        spanTextView.setText01("第一组字体");
+        spanTextView.setText02("第二组字体");
+        spanTextView.setSize01(30);
+        spanTextView.setSize02(10);
+        spanTextView.setColor01(Color.RED);
+        spanTextView.setColor02(Color.BLUE);
+
+
+## 五.参考效果图：
+![](https://github.com/alijiahua/SpanTextView/blob/master/imgsave/Screenshot_20170405-145835.png)
+
+
+## 六.CSDN博客地址：http://blog.csdn.net/alijiahua
+
