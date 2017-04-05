@@ -7,8 +7,8 @@
 
     allprojects {
     repositories {
-        jcenter()
-       	maven { url 'https://jitpack.io'  }
+           jcenter()
+        	maven { url 'https://jitpack.io'  }
            }
         }
 
