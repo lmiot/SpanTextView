@@ -8,7 +8,9 @@
     allprojects {
     repositories {
         jcenter()
-       	maven { url 'https://jitpack.io' }
+
+       	maven { url 'https://jitpack.io'  }
+
         }
     }
 
@@ -65,6 +67,7 @@ dependencies {
 
 
 ## 五.参考效果图：
+
 ![](https://github.com/alijiahua/SpanTextView/blob/master/imgsave/Screenshot_20170405-145835.png)
 
 
