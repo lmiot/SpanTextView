@@ -68,5 +68,5 @@ dependencies {
 ![](https://github.com/alijiahua/SpanTextView/blob/master/imgsave/Screenshot_20170405-145835.png)
 
 
-## 六.CSDN博客地址：http://blog.csdn.net/alijiahua
+
 
