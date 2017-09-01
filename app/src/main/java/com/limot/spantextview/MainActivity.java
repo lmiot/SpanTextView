@@ -13,12 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-     /*   SpanTextView spanTextView= (SpanTextView) findViewById(R.id.id_span_text_view);
+     /*
+     SpanTextView spanTextView= (SpanTextView) findViewById(R.id.id_span_text_view);
         spanTextView.setText01("第一组字体");
         spanTextView.setText02("第二组字体");
         spanTextView.setSize01(30);
         spanTextView.setSize02(10);
         spanTextView.setColor01(Color.RED);
-        spanTextView.setColor02(Color.BLUE);*/
+        spanTextView.setColor02(Color.BLUE);
+        */
     }
 }

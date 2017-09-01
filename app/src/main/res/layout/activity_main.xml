@@ -24,7 +24,6 @@
         app:size02="10"
         app:text01="第一组字体"
         app:text02="第二组字体"
-
         />
 
 </RelativeLayout>
