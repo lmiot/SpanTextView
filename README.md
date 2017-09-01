@@ -16,7 +16,7 @@
 ## 二.其次在dependencies中添加：
 <pre><code>
 dependencies {
-     compile 'com.github.alijiahua:SpanTextView:V1.0'
+     compile 'com.github.lmiot:SpanTextView:V1.0'
 }
 </code></pre>
 
@@ -68,5 +68,5 @@ dependencies {
 ![](https://github.com/alijiahua/SpanTextView/blob/master/imgsave/Screenshot_20170405-145835.png)
 
 
-## 六.CSDN博客地址：http://blog.csdn.net/alijiahua
+
 
